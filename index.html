@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="臧珂 - AI Native、数据分析、运营、市场营销、人力资源方向个人网站">
+    <title>臧珂 | AI Native · 数据分析 · 运营</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="vendor/lucide.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body id="top">
+    <!-- ===== Terminal Loader ===== -->
+    <div id="terminal-loader">
+      <div class="terminal-content" id="terminal-content">
+        <div class="terminal-line" data-delay="300"><span class="prompt">&gt;</span> <span class="cmd" data-i18n="tl.1">Initializing system...</span></div>
+        <div class="terminal-line" data-delay="500"><span class="prompt">&gt;</span> <span class="cmd" data-i18n="tl.2">Loading profile data...</span></div>
+        <div class="terminal-line" data-delay="300"><span class="output" data-i18n="tl.3">Name: 臧珂 &nbsp;|&nbsp; Role: AI Native &nbsp;|&nbsp; Status: Active</span></div>
+        <div class="terminal-line" data-delay="400"><span class="prompt">&gt;</span> <span class="cmd" data-i18n="tl.4">Connecting AI agent...</span></div>
+        <div class="terminal-line" data-delay="300"><span class="output highlight" data-i18n="tl.5">✓ AI Agent Connected</span></div>
+        <div class="terminal-line" data-delay="400"><span class="prompt">&gt;</span> <span class="cmd" data-i18n="tl.6">Rendering interface components...</span></div>
+        <div class="terminal-line" data-delay="200"><span class="output highlight" data-i18n="tl.7">✓ All systems ready</span></div>
+        <div class="terminal-line" data-delay="300"><span class="prompt">&gt;</span> <span class="cmd" data-i18n="tl.8">欢迎来到臧珂的个人网站</span></div>
+      </div>
+      <div class="terminal-skip" onclick="skipTerminal()" data-i18n="tl.skip">点击跳过 →</div>
+    </div>
+
+    <div class="atmosphere" aria-hidden="true">
+      <span class="dune dune-one"></span>
+      <span class="dune dune-two"></span>
+      <span class="dune dune-three"></span>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="臧珂主页">
+        <span class="brand-mark photo-mark"><img src="images/portrait.jpg" alt="臧珂头像"></span>
+        <span>
+          <strong data-i18n="brand.name">臧珂</strong>
+          <small>Zang Ke</small>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#education" data-i18n="nav.education">教育经历</a>
+        <a href="#experience" data-i18n="nav.experience">实习经历</a>
+        <a href="#skillkit" data-i18n="nav.skillkit">个人能力</a>
+        <a href="#entrepreneurship" data-i18n="nav.entrepreneurship">创业经历</a>
+        <a href="#projects" data-i18n="nav.projects">项目经历</a>
+        <a href="#portfolio" data-i18n="nav.portfolio">作品集</a>
+      </nav>
+      <button class="lang-switch" type="button" data-lang-toggle>
+        <span data-lang-option="zh">中</span>
+        <span data-lang-option="en">EN</span>
+      </button>
+      <a class="nav-cta" href="#contact" aria-label="联系臧珂">
+        <i data-lucide="send"></i>
+      </a>
+    </header>
+
+    <main>
+      <!-- ===== M1: Hero ===== -->
+      <section class="hero art-section">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="hero.eyebrow">AI Native / 数据分析 / 运营 / 市场营销 / 人力资源</p>
+          <h1 data-i18n="hero.name">臧珂</h1>
+          <div class="hero-lines">
+            <span data-i18n="hero.line1">AI Native · 全链路AI应用能力</span>
+            <span data-i18n="hero.line2">数据驱动 · 从洞察到落地</span>
+            <span data-i18n="hero.line3">用户增长 · 内容创作 · 资源整合</span>
+          </div>
+          <div class="action-row" aria-label="联系方式">
+            <button class="button primary" data-copy="z1261144319@126.com" data-copy-label="邮箱">
+              <i data-lucide="mail"></i>
+              <span data-i18n="hero.emailbtn">邮件：z1261144319@126.com</span>
+            </button>
+            <button class="button" data-copy="18800105658" data-copy-label="电话">
+              <i data-lucide="phone"></i>
+              <span data-i18n="hero.phonebtn">电话：18800105658</span>
+            </button>
+            <a class="button icon-only" href="#portfolio" aria-label="查看作品集">
+              <i data-lucide="folder-open"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-stage" aria-label="臧珂个人形象">
+          <article class="portrait-device glass-panel">
+            <img src="images/portrait.jpg" alt="臧珂个人照片">
+            <div class="portrait-caption">
+              <span data-i18n="hero.caption.base">base 全国</span>
+              <strong data-i18n="hero.caption.role">关注运营、市场、人力、供应链等方向的机会</strong>
+            </div>
+          </article>
+
+          <article class="floating-card glass-panel card-one">
+            <span class="icon-disc"><i data-lucide="bar-chart-3"></i></span>
+            <p data-i18n="hero.card1">数据分析与可视化：VOC分析（案例可见作品集）、面板数据分析、问卷数据分析、EXCEL（数据透视、VBA）、SQL、Python、Tableau、SPSS、AMOS、stata等。</p>
+          </article>
+
+          <article class="floating-card glass-panel card-two dark-glass">
+            <span class="icon-disc"><i data-lucide="sparkles"></i></span>
+            <p data-i18n="hero.card2">AI Native（月token消耗500+M）：AI编程（独立开发个人网站、插件、SQL智能体、自动化程序、爬虫、数据分析、本地工作台等，含2个付费AI流程改造项目成果，如京东内部包邮批量查询工作台）、图文+视频生成等。</p>
+          </article>
+
+          <article class="floating-card glass-panel card-three">
+            <span class="icon-disc"><i data-lucide="trending-up"></i></span>
+            <p data-i18n="hero.card3">运营：用户增长（3个月内给小绿鲸APP拉新800+）、网感、选题、文案、拍摄、剪辑、像塑、秀米、Axure等</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== M2: Snapshot Carousel ===== -->
+      <section class="section journey-panel" id="snapshot">
+        <div class="section-heading centered">
+          <p class="eyebrow" data-i18n="snapshot.eyebrow">亮点数据</p>
+          <h2 data-i18n="snapshot.title">用数字说话</h2>
+        </div>
+        <div class="snapshot-carousel" data-snapshot-carousel>
+          <button class="carousel-button carousel-prev" type="button" data-carousel-prev aria-label="上一个">
+            <i data-lucide="chevron-left"></i>
+          </button>
+          <div class="snapshot-viewport">
+            <div class="metric-grid snapshot-track" data-carousel-track>
+              <article class="metric-card glass-panel" data-snapshot-card>
+                <strong data-i18n="snapshot.n1">+35%</strong>
+                <span data-i18n="snapshot.d1">得物达人带货投稿量环比增长，创作者分层策略有效平衡平台生态</span>
+              </article>
+              <article class="metric-card glass-panel" data-snapshot-card>
+                <strong data-i18n="snapshot.n2">+50%</strong>
+                <span data-i18n="snapshot.d2">金拱门品牌联名项目落地效率整体提升，多线程项目管理保障0延期</span>
+              </article>
+              <article class="metric-card glass-panel" data-snapshot-card>
+                <strong data-i18n="snapshot.n3">10位</strong>
+                <span data-i18n="snapshot.d3">成功孵化平台标杆带货达人，训练营单场最高场观突破12,000+</span>
+              </article>
+              <article class="metric-card glass-panel" data-snapshot-card>
+                <strong data-i18n="snapshot.n4">1,500+</strong>
+                <span data-i18n="snapshot.d4">校园备考资料平台峰值日营收，精细化运营建立口碑与品牌认知</span>
+              </article>
+              <article class="metric-card glass-panel" data-snapshot-card>
+                <strong data-i18n="snapshot.n5">300+</strong>
+                <span data-i18n="snapshot.d5">成功服务首都经济贸易大学备考学生，构建高效网盘资料交付体系</span>
+              </article>
+              <article class="metric-card glass-panel" data-snapshot-card>
+                <strong data-i18n="snapshot.n6">35+</strong>
+                <span data-i18n="snapshot.d6">覆盖核心课程门数，双轨资源整合构建高价值备考资料库</span>
+              </article>
+              <article class="metric-card glass-panel" data-snapshot-card>
+                <strong data-i18n="snapshot.n7">80%</strong>
+                <span data-i18n="snapshot.d7">资料交付效率提升，网盘结构化管理+索引文档+独立链接</span>
+              </article>
+              <article class="metric-card glass-panel" data-snapshot-card>
+                <strong data-i18n="snapshot.n8">前15%</strong>
+                <span data-i18n="snapshot.d8">率队获"商谈赢家杯"全国大学生商务谈判大赛全国二等奖</span>
+              </article>
+              <article class="metric-card glass-panel" data-snapshot-card>
+                <strong data-i18n="snapshot.n9">40万</strong>
+                <span data-i18n="snapshot.d9">大众点评单篇笔记最高浏览量，千粉账号持续输出本地内容</span>
+              </article>
+              <article class="metric-card glass-panel" data-snapshot-card>
+                <strong data-i18n="snapshot.n10">160万+</strong>
+                <span data-i18n="snapshot.d10">抖音单篇作品最高播放量，2篇百万播放，多篇作品浏览量过万</span>
+              </article>
+            </div>
+          </div>
+          <button class="carousel-button carousel-next" type="button" data-carousel-next aria-label="下一个">
+            <i data-lucide="chevron-right"></i>
+          </button>
+          <div class="carousel-dots" data-carousel-dots aria-label="轮播位置"></div>
+        </div>
+      </section>
+
+      <!-- ===== M5-1: 教育经历 ===== -->
+      <section class="section" id="education">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="education.eyebrow">教育经历</p>
+          <h2 data-i18n="education.title">我的学习生涯</h2>
+        </div>
+        <div class="detail-list">
+          <article class="detail-item glass-panel">
+            <div class="detail-header">
+              <img class="school-logo" src="images/swufe.png" alt="西南财经大学">
+              <div>
+                <span>2023.09 – 2026.06</span>
+                <h2 data-i18n="edu.s1.name">西南财经大学</h2>
+                <p class="degree" data-i18n="edu.s1.degree">企业管理（学术型硕士）· 保研</p>
+              </div>
+            </div>
+          </article>
+          <article class="detail-item glass-panel">
+            <div class="detail-header">
+              <img class="school-logo" src="images/cueb.png" alt="首都经济贸易大学">
+              <div>
+                <span>2019.09 – 2023.07</span>
+                <h2 data-i18n="edu.s2.name">首都经济贸易大学</h2>
+                <p class="degree" data-i18n="edu.s2.degree">工商管理（本科）</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== M3: 实习经历 ===== -->
+      <section class="section split-section" id="experience">
+        <div class="section-heading sticky-heading">
+          <p class="eyebrow" data-i18n="experience.eyebrow">实习经历</p>
+          <h2 data-i18n="experience.title">我在真实职场做过什么</h2>
+          <p class="quiet-copy" data-i18n="experience.copy">四段实习覆盖运营、市场营销、人力资源，构建"数据+运营+协作"复合能力</p>
+        </div>
+        <div class="timeline glass-panel">
+          <article class="timeline-item">
+            <div class="timeline-date">2026.03 – 2026.06</div>
+            <div>
+              <h3 data-i18n="exp.j0.title">北京臻盛网络技术有限公司 · 增长策略运营</h3>
+              <ul class="clean-list">
+                <li data-i18n-html="exp.j0.b1"><strong>优化投放渠道结构，扭转渠道亏损现状：</strong>负责头条、广点通、百度、快手等渠道信息流投放，针对新项目团队部分渠道经营不善的问题，结合渠道竞价机制、大盘数据及竞品动态，通过对接渠道直客争取流量扶持、迭代素材定向、精细化调优出价策略，联动PV、ecpm、ROI、转化成本等核心数据优化投放，改善弱势渠道，整体投放ROI提升15%，有效降低渠道依赖风险。</li>
+                <li data-i18n-html="exp.j0.b2"><strong>自动化工具提效，沉淀标准化投放体系：</strong>针对日常数据统计复盘繁琐、易出错的痛点，利用AI搭建自动化数据监测与表格整理工具，实现数据自动汇总、指标涨跌预警，大幅提升投放复盘效率。同时依据新品冷启动、起量增量、稳定维稳、回收波动等不同场景，沉淀多渠道投放标准化SOP，通过精细化策略迭代控本增量，产品激活成本降低13%，整体投放毛利提升8%，赋能团队规模化投放。</li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag" data-i18n="exp.j0.t1">信息流投放</span><span class="tag" data-i18n="exp.j0.t2">渠道优化</span><span class="tag" data-i18n="exp.j0.t3">AI工具提效</span><span class="tag" data-i18n="exp.j0.t4">标准化SOP</span>
+              </div>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">2025.03 – 2025.06</div>
+            <div>
+              <h3 data-i18n="exp.j1.title">金拱门（中国）有限公司 · 市场营销</h3>
+              <ul class="clean-list">
+                <li data-i18n-html="exp.j1.b1"><strong>全国门店营销数据数字化监控：</strong>原有活动无统一数据监控，为提高沟通协作和数据分析效率，搭建标准化、自动化的日报/周报销售数据看板，并通过数据透视（细分区域/时间/产品组合）定位销量波动原因（如Social宣传内容上线带动销量提升/特定区域缺货导致下降），及时联动设计、供应链部门调整确保销量（如快速协同设计部上线限时PDP/紧急协调供应链加急调拨），输出标准化营销复盘SOP，支撑区域营销活动动态调整，降低活动滞销风险。</li>
+                <li data-i18n-html="exp.j1.b2"><strong>跨部门活动落地执行与多线程项目管理：</strong>并行推进3项全国性节日主题营销项目，通过精准内外部协调保障全链路落地，有良好的计划-组织-协调-把控项目进度的能力。对内，统筹品牌、供应链、门店全链路资源，完成派对活动全国物料设计定稿、需求调研（覆盖100%门店）、准时配送（0延期），主导全国门店物料的精准需求对接、设计沟通及供应链协调，各环节0延期；对外，在同期推进多项目高压环境下，同步管理10+达人合作全流程，搭建达人对接筛选-排期-投放-复盘闭环流程，并独立完成多渠道私域运营，品牌联名项目落地效率整体提升50%。</li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag" data-i18n="exp.j1.t1">数据透视</span><span class="tag" data-i18n="exp.j1.t2">跨部门协同</span><span class="tag" data-i18n="exp.j1.t3">SOP标准化</span><span class="tag" data-i18n="exp.j1.t4">多线项目管理</span><span class="tag" data-i18n="exp.j1.t5">达人合作</span>
+              </div>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">2024.12 – 2025.03</div>
+            <div>
+              <h3 data-i18n="exp.j2.title">上海得物信息集团有限公司 · 创作者运营/社区运营</h3>
+              <ul class="clean-list">
+                <li data-i18n-html="exp.j2.b1"><strong>达人IP孵化体系搭建：</strong>小白创作者创作能力较差，随手拍风格泛滥，为系统提高其创作能力，独立搭建小白创作者训练营完整闭环SOP（爆款拆解→选题策划→内容量产→流量优化），累积拆解200+爆款、自主沉淀5套模板，落地12场垂直直播运营，单场最高场观突破12,000+，成功孵化10位平台标杆带货达人，沉淀2个200+精准粉丝垂直社群，社群周均UGC内容产出300+条，学员发文频次提升2.6倍，社群互动频次提升3倍。</li>
+                <li data-i18n-html="exp.j2.b2"><strong>创作者分层增长策略设计：</strong>平台创作者生态呈现哑铃型失衡，中腰部作者急剧减少，影响内容多元性与用户留存，为平衡创作生态，主动建立与35+位中腰部创作者的深度联系，联动腰部达人深度调研15场，挖掘「创作成本高、变现单一、流量扶持缺失」核心痛点，独立设计"阶梯式流量券+专属商业权益"差异化激励方案，协同产品上线「得物成长之星」达人榜单，为中层达人打造标准化上升路径与曝光标杆；定向资源倾斜运营下，腰部达人月度活跃度提升22%，达人带货投稿量环比上涨35%，有效平衡平台创作者结构，补齐中层优质带货内容产能。</li>
+                <li data-i18n-html="exp.j2.b3"><strong>平台大型营销活动操盘：</strong>全程参与CNY/超会买seeding投放两大站内活动（竞品调研、趋势分析、选题策划、达人管理70+位）；活动后搭建多维度漏斗数据分析模型，定位生肖国潮内容GMV+28%、CTR-7%的流量转化漏洞，输出针对性选题优化、画面迭代的落地策略，整体帮助后续转化提升16%。</li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag" data-i18n="exp.j2.t1">达人IP孵化</span><span class="tag" data-i18n="exp.j2.t2">创作者分层</span><span class="tag" data-i18n="exp.j2.t3">社群运营</span><span class="tag" data-i18n="exp.j2.t4">活动操盘</span><span class="tag" data-i18n="exp.j2.t5">漏斗分析</span><span class="tag" data-i18n="exp.j2.t6">达人管理</span>
+              </div>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">2021.06 – 2021.08</div>
+            <div>
+              <h3 data-i18n="exp.j3.title">畅捷通信息技术股份有限公司 · 人力实习生</h3>
+              <ul class="clean-list">
+                <li data-i18n-html="exp.j3.b1"><strong>招聘与跨部门协作沟通：</strong>负责研发岗位的招聘，日均处理简历1000+份，独立完成候选人从意向到入职的全周期管理。独立设计并应用VBA+Excel搭建多招聘渠道数据看板，建立自动化招聘漏斗，量化评估渠道效果，显著提升简历筛选及流程管理效率，最终成功在招聘淡季完成3名研发岗位候选人全周期入职。</li>
+                <li data-i18n-html="exp.j3.b2"><strong>培训和文化活动策划：</strong>从0-1全面协助完成培训项目落地（调研、协调、执行、反馈）及文化活动策划执行（海报设计、物料准备、跨部门对接）。</li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag" data-i18n="exp.j3.t1">数据看板</span><span class="tag" data-i18n="exp.j3.t2">招聘漏斗</span><span class="tag" data-i18n="exp.j3.t3">VBA自动化</span><span class="tag" data-i18n="exp.j3.t4">培训策划</span><span class="tag" data-i18n="exp.j3.t5">跨部门协作</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== M4: 个人能力 (8宫格) ===== -->
+      <section class="section" id="skillkit">
+        <div class="section-heading centered">
+          <p class="eyebrow" data-i18n="skill.eyebrow">个人能力</p>
+          <h2 data-i18n="skill.title">我的能力不止实习</h2>
+        </div>
+        <div class="skill-grid skill-grid-7">
+          <article class="skill-card glass-panel">
+            <span class="icon-disc"><i data-lucide="bar-chart-3"></i></span>
+            <h3 data-i18n="skill.1.title">数据分析与可视化</h3>
+            <p data-i18n-html="skill.1.desc">数据分析与可视化：<strong>VOC分析（案例可见作品集）</strong>、面板数据分析、问卷数据分析、EXCEL（数据透视、VBA）、SQL、Python、Tableau、SPSS、AMOS、stata等。</p>
+          </article>
+          <article class="skill-card glass-panel">
+            <span class="icon-disc"><i data-lucide="bot"></i></span>
+            <h3 data-i18n="skill.2.title">AI应用</h3>
+            <p data-i18n-html="skill.2.desc">AI Native（月token消耗500+M）：AI编程（独立开发个人网站、插件、SQL智能体、自动化程序、爬虫、数据分析、本地工作台等，<strong>含2个付费AI流程改造项目成果，如京东内部包邮批量查询工作台</strong>）、图文+视频生成等。</p>
+          </article>
+          <article class="skill-card glass-panel">
+            <span class="icon-disc"><i data-lucide="trending-up"></i></span>
+            <h3 data-i18n="skill.3.title">运营能力</h3>
+            <p data-i18n="skill.3.desc">用户增长（3个月内给小绿鲸APP拉新800+）/ 网感选题 / 文案撰写 / 拍摄剪辑 / 像塑 / 秀米 / Axure</p>
+          </article>
+          <article class="skill-card glass-panel">
+            <span class="icon-disc"><i data-lucide="share-2"></i></span>
+            <h3 data-i18n="skill.4.title">自媒体矩阵</h3>
+            <p data-i18n="skill.4.desc">大众点评（千粉，单篇变现2k+）/ 抖音（多篇百万播放）/ 小红书（多篇过百点赞）</p>
+          </article>
+          <article class="skill-card glass-panel">
+            <span class="icon-disc"><i data-lucide="zap"></i></span>
+            <h3 data-i18n="skill.5.title">综合能力</h3>
+            <p data-i18n="skill.5.desc">2次校内创业经历（总收入1w+）/ multi-tasking / 抗压 / 数据敏感 / 商务谈判（全国二等奖负责人）/ 团队协作和管理（20+项目负责人）/ 产品打造 / 项目管理 / 资源整合 / 快速学习 / 快速适应</p>
+          </article>
+          <article class="skill-card glass-panel">
+            <span class="icon-disc"><i data-lucide="book-open"></i></span>
+            <h3 data-i18n="skill.6.title">知识储备</h3>
+            <p data-i18n="skill.6.desc">AB test / 定性/定量分析 / 假设检验 / RFM用户分层 / 英语六级 / 计算机二级 / 初级会计证书</p>
+          </article>
+          <article class="skill-card glass-panel">
+            <span class="icon-disc"><i data-lucide="gamepad-2"></i></span>
+            <h3 data-i18n="skill.7.title">兴趣爱好</h3>
+            <p data-i18n="skill.7.desc">游戏（王者荣耀2000+场/王者段位）/ 展演 / 密室 / 剧本杀 / 桌游 / 广播剧 / 旅行 / 羽毛球/乒乓球/网球</p>
+          </article>
+          <article class="skill-card glass-panel">
+            <span class="icon-disc"><i data-lucide="folder-open"></i></span>
+            <h3 data-i18n="skill.8.title">最新作品集</h3>
+            <p data-i18n-html="skill.8.desc">因个人网站更新存在延迟，查看最新的作品集可见以下飞书链接：<a href="https://my.feishu.cn/file/Z1fwbvlLboPvXbxmXbwcddHwni5" target="_blank" rel="noreferrer">https://my.feishu.cn/file/Z1fwbvlLboPvXbxmXbwcddHwni5</a></p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== M5-2: 创业经历 ===== -->
+      <section class="section" id="entrepreneurship">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="entrepreneurship.eyebrow">创业经历</p>
+          <h2 data-i18n="entrepreneurship.title">从0到1，积极主动验证商业闭环</h2>
+        </div>
+        <div class="detail-list">
+          <article class="detail-item glass-panel">
+            <span>2023.01 – 2023.02</span>
+            <h2 data-i18n="ent.1.title">校园备考资料整合与服务平台 · 创始人/核心运营者</h2>
+            <ul class="detail-points">
+              <li data-i18n-html="ent.1.p1"><strong>洞察痛点与发起项目：</strong>针对校园内高质量备考资料（名师PPT、复习笔记、历年真题）分散、获取困难、质量参差不齐的普遍痛点，独立发起并运营资料整合项目。</li>
+              <li data-i18n-html="ent.1.p2"><strong>资源整合与产品构建：</strong>运用强大信息检索能力及既往积累，高效整合覆盖多学院、多专业的免费及付费稀缺资料（含独家渠道获取）。主导资料标准化整理、分类、存储（网盘结构化管理），建立清晰检索体系，显著提升交付效率。迭代策略：识别高价值稀缺资料后，迅速决策并采购，扩充资料库覆盖范围与深度。</li>
+              <li data-i18n-html="ent.1.p3"><strong>商业化运营与销售策略：</strong>制定"高质量+高服务"溢价策略（单价20-30元），精准定位价格敏感度较低、追求效率的备考学生群体。实施套餐组合销售、跨学期预购折扣，提升客单价与用户粘性。设计"老带新"裂变机制（推荐新用户获赠真题），有效降低获客成本。</li>
+              <li data-i18n-html="ent.1.p4"><strong>用户运营与体验优化：</strong>首创"资料更新主动推送"售后机制，显著提升用户满意度与复购率。</li>
+              <li data-i18n-html="ent.1.p5"><strong>渠道优化与团队管理：</strong>遭遇核心宣传渠道（校园墙）流量限制后，快速响应，策略性开设并运营第二账号，实现交替宣传维持曝光，规避高额广告费。因业务扩张引入合伙人（负责资料库结构化整理与维护），明确分工（7:3分成），提升运营效率。</li>
+            </ul>
+            <div class="result-box" data-i18n-html="ent.1.result">
+              <strong>关键成果：</strong>峰值日营收突破 <strong>1,500+</strong> 元，成功服务 <strong>300+</strong> 名备考学生，覆盖 <strong>35+</strong> 门核心课程，构建覆盖5+个学院的高质量备考资料库，建立高效网盘资料管理与交付体系，用户资料获取时间缩短约 <strong>60%</strong>。
+            </div>
+            <div class="tag-row">
+              <span class="tag" data-i18n="ent.1.t1">资源整合</span><span class="tag" data-i18n="ent.1.t2">产品运营</span><span class="tag" data-i18n="ent.1.t3">商业变现</span><span class="tag" data-i18n="ent.1.t4">裂变增长</span><span class="tag" data-i18n="ent.1.t5">危机应对</span>
+            </div>
+          </article>
+          <article class="detail-item glass-panel">
+            <span>2024.05 – 2024.10</span>
+            <h2 data-i18n="ent.2.title">校园闲置物品回收与再销售 · 创始人/核心运营者</h2>
+            <ul class="detail-points">
+              <li data-i18n-html="ent.2.p1"><strong>洞察痛点与项目启动：</strong>观察到毕业季大量仍有使用价值的物品被丢弃，发起项目回收、清洁、转售给新生，解决资源浪费与新生购置成本问题。</li>
+              <li data-i18n-html="ent.2.p2"><strong>货源渠道创新与优化：</strong>初期：主动回收、清洗丢弃物品。关键迭代1：与宿舍楼宿管阿姨建立独家合作，由阿姨在垃圾分类时筛选、暂存可用物品，实现稳定、高效、低成本"进货"，免除翻找负担。关键迭代2：基于仓储与人力限制，实施品类聚焦策略，即重点运营高客单价电器（台灯、吹风机等，按新品5折定价且提供配送）及精选高质量/高性价比日用收纳品（价格低于PDD同款但不提供配送）。</li>
+              <li data-i18n-html="ent.2.p3"><strong>精细化运营与销售策略：</strong>差异化定价与服务：电器主打性价比（新品5折）+ 免费送货上门（利用自有电动车及校园免费水电资源）；精选日用品主打低价走量（不送货）。用户信任与形象管理：策略性使用不同账号分时段发布，塑造"资深学长学姐转让自用物品"形象，增强信任感，规避"二道贩子"负面认知。</li>
+              <li data-i18n-html="ent.2.p4"><strong>成本控制：</strong>最大化利用校园免费资源（电动车、水电），核心成本仅为人力时间；与宿管阿姨采用分成模式（50%），提高投入效率。</li>
+            </ul>
+            <div class="result-box" data-i18n-html="ent.2.result">
+              <strong>关键成果：</strong>成功搭建可持续回收-再销售闭环，为 <strong>100+</strong> 名新生提供高性价比入学必需品，项目实现净收入约 <strong>1,200元+</strong>，与 <strong>2栋</strong> 宿舍楼宿管阿姨建立稳定合作关系。
+            </div>
+            <div class="tag-row">
+              <span class="tag" data-i18n="ent.2.t1">供应链创新</span><span class="tag" data-i18n="ent.2.t2">品类聚焦</span><span class="tag" data-i18n="ent.2.t3">差异化定价</span><span class="tag" data-i18n="ent.2.t4">信任塑造</span><span class="tag" data-i18n="ent.2.t5">资源整合</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== M5-3: 项目经历 ===== -->
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="projects.eyebrow">项目经历</p>
+          <h2 data-i18n="projects.title">校内也在进行商务谈判</h2>
+        </div>
+        <div class="detail-list">
+          <article class="detail-item glass-panel">
+            <span>2021.09 – 2021.11</span>
+            <h2 data-i18n="proj.1.title">"商谈赢家杯"全国大学生商务谈判 · 负责人</h2>
+            <ul class="detail-points">
+              <li data-i18n-html="proj.1.p1"><strong>领导团队与策略规划：</strong>作为5人谈判小组负责人，统筹分工并制定全周期备赛计划；主导撰写采购、纠纷、赔偿、技术合作等多类谈判案例的预案，整合法律条款、行业数据及对手背景信息，构建多维利益分析模型（利益点/成本/风险/合作可持续性）。</li>
+              <li data-i18n-html="proj.1.p2"><strong>动态谈判与技巧应用：</strong>决赛阶段灵活运用条件交换策略（如："同意延长付款周期"换取"赔偿金额提升30%"）、沉默施压、锚定效应（率先报价引导对方基准）等技巧，3轮谈判中达成我方核心条款满足率60%。</li>
+              <li data-i18n-html="proj.1.p3"><strong>跨阶段协作与应变：</strong>率队通过「策划书盲审-模拟谈判-48小时神秘案例」，在48小时限时案例环节，快速拆解跨国物流成本结构（覆盖关税、滞港费、空运溢价），建立赔偿金额动态测算模型。创新设计「阶梯式赔偿+订单优先权」组合方案：以"保证未来三年订单量"换取对方承担当期60%损失，逆转我方被动立场。现场谈判中实时调控分工：由法律队员锚定"不可抗力条款漏洞"，财务队员量化延期损失，最终促成赔偿金达成我方预设区间。</li>
+            </ul>
+            <div class="result-box" data-i18n-html="proj.1.result">
+              <strong>团队成果：</strong>率队获 <strong>全国二等奖（前15%）</strong>。
+            </div>
+            <div class="tag-row">
+              <span class="tag" data-i18n="proj.1.t1">团队领导</span><span class="tag" data-i18n="proj.1.t2">策略规划</span><span class="tag" data-i18n="proj.1.t3">商务谈判</span><span class="tag" data-i18n="proj.1.t4">危机应变</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== M5-4: 作品集 ===== -->
+      <section class="section" id="portfolio">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="portfolio.eyebrow">作品集</p>
+          <h2 data-i18n="portfolio.title">作品是我一步一个脚印的证明</h2>
+        </div>
+        <div class="detail-list">
+
+          <!-- AI编程 -->
+          <article class="detail-item glass-panel">
+            <div class="detail-title-row">
+              <span class="detail-title" data-i18n-html="pf.code.title"><i data-lucide="code"></i> AI编程作品</span>
+              <span class="tag" data-i18n="pf.code.badge">月token消耗量500+M</span>
+            </div>
+            <p class="detail-desc" data-i18n="pf.code.intro">熟练运用AI编程，Cursor、deepseek、NoCode等均有涉及。以下为部分作品展示：</p>
+            <div class="portfolio-sub">
+              <h4 data-i18n="pf.code.s1">① VOC数据分析</h4>
+              <p class="detail-desc" data-i18n-html="pf.code.d1">利用workbuddy进行数据的爬取、清洗、分析、汇报，曾做过6月25日苹果涨价的VOC数据分析：<br>报告PPT可见：<a href="https://my.feishu.cn/file/H0fvbxJ3movP3pxDc4hcbGRKnUb?from=from_copylink" target="_blank" rel="noreferrer">https://my.feishu.cn/file/H0fvbxJ3movP3pxDc4hcbGRKnUb</a><br>完整报告见：<a href="https://my.feishu.cn/docx/RLtadS4upoCWZhx7zrWcj1eunQh?from=from_copylink" target="_blank" rel="noreferrer">https://my.feishu.cn/docx/RLtadS4upoCWZhx7zrWcj1eunQh</a></p>
+              <div class="img-grid">
+                <img src="images/VOC数据分析-报告PPT1.jpg" alt="VOC数据分析报告PPT" class="portfolio-img" data-lightbox>
+                <img src="images/VOC数据分析-报告PPT2.jpg" alt="VOC数据分析报告PPT" class="portfolio-img" data-lightbox>
+                <img src="images/VOC数据分析-完整报告1.jpg" alt="VOC数据分析完整报告" class="portfolio-img" data-lightbox>
+                <img src="images/VOC数据分析-完整报告2.jpg" alt="VOC数据分析完整报告" class="portfolio-img" data-lightbox>
+                <img src="images/VOC数据分析-图表索引.jpg" alt="VOC数据分析图表索引" class="portfolio-img" data-lightbox>
+              </div>
+            </div>
+            <div class="portfolio-sub">
+              <h4 data-i18n="pf.code.s2">② 纯AI搭建的个人网站</h4>
+              <p class="detail-desc" data-i18n="pf.code.d2">利用Codex、Workbuddy、Minimax等工具，纯AI搭建了自己的个人网站（含简历和作品集）——即：您现在看到的这个网站</p>
+              <div class="img-grid">
+                <img src="images/纯AI搭建的个人网站.jpg" alt="纯AI搭建的个人网站" class="portfolio-img" data-lightbox>
+              </div>
+            </div>
+            <div class="portfolio-sub">
+              <h4 data-i18n="pf.code.s3">③ 纯AI搭建的本地工作台</h4>
+              <p class="detail-desc" data-i18n-html="pf.code.d3">利用Codex、Workbuddy、Minimax等工具，纯AI搭建了2个本地工作台：<br>（1）用于自动化整理公司现有数据报表的本地工作台（因涉及原司系统不做展示）<br>（2）正在制作的自动化收集、整理小红书转租信息的本地工作台（目前仍处于制作、测试阶段，token消耗已超300M，预计会在GitHub上开源，敬请期待）</p>
+              <div class="img-grid">
+                <img src="images/本地工作台-小红书转租1.jpg" alt="小红书转租工作台主页" class="portfolio-img" data-lightbox>
+                <img src="images/本地工作台-小红书转租2.jpg" alt="小红书转租工作台采集任务" class="portfolio-img" data-lightbox>
+                <img src="images/本地工作台-小红书转租3.jpg" alt="小红书转租工作台房源详情" class="portfolio-img" data-lightbox>
+              </div>
+            </div>
+            <div class="portfolio-sub">
+              <h4 data-i18n="pf.code.s4">④ SQL代码生成智能体</h4>
+              <p class="detail-desc" data-i18n-html="pf.code.d4">利用NoCode平台+deepseek的api，将SQL与AI结合，创作出能够根据业务需求自动化进行SQL代码生成的智能体。<a href="https://sql-generate-assist.nocode.host" target="_blank" rel="noreferrer">https://sql-generate-assist.nocode.host</a></p>
+              <div class="img-grid">
+                <img src="images/自动化进行SQL代码生成的智能体1.jpg" alt="SQL智能体" class="portfolio-img" data-lightbox>
+                <img src="images/自动化进行SQL代码生成的智能体2.jpg" alt="SQL智能体" class="portfolio-img" data-lightbox>
+              </div>
+            </div>
+            <div class="portfolio-sub">
+              <h4 data-i18n="pf.code.s5">⑤ 浏览器插件 — 智能表单填写</h4>
+              <p class="detail-desc" data-i18n="pf.code.d5">利用cursor、kimi开发的2款浏览器插件：（1）一款是表单填写工具，能够实现在秋招、保研过程中快速进行信息的填写工作，目前仍在迭代，正在进行智能的表单识别和一键填写功能的测试（2）另一款是批量查询京东包邮信息的工作台（京东内部员工付费定制），用于优化内部工作流，当前仅上线1个功能，持续迭代中。</p>
+              <div class="img-grid">
+                <img src="images/cursor开发的浏览器插件1.png" alt="浏览器插件" class="portfolio-img" data-lightbox>
+                <img src="images/cursor开发的浏览器插件2.png" alt="浏览器插件" class="portfolio-img" data-lightbox>
+                <img src="images/cursor开发的浏览器插件3.png" alt="浏览器插件" class="portfolio-img" data-lightbox>
+                <img src="images/京东批量包邮检查工作台.png" alt="京东批量包邮检查工作台" class="portfolio-img portfolio-img-wide" data-lightbox>
+              </div>
+            </div>
+            <div class="portfolio-sub">
+              <h4 data-i18n="pf.code.s6">⑥ 智能化文献速读模版</h4>
+              <p class="detail-desc" data-i18n="pf.code.d6">利用kimi的api+飞书多维表格，搭建智能化、自动化的文献速读模版。</p>
+              <div class="img-grid">
+                <img src="images/智能化、自动化的文献速读模版.jpg" alt="文献速读模版" class="portfolio-img" data-lightbox>
+              </div>
+            </div>
+          </article>
+
+          <!-- AI应用能力 -->
+          <article class="detail-item glass-panel">
+            <span class="detail-title" data-i18n-html="pf.img.title"><i data-lucide="sparkles"></i> AI图像、视频与3D建模</span>
+            <p class="detail-desc" data-i18n="pf.img.intro">熟练运用AI进行图文、视频的生成、3D建模，有过AI特效的制作经历，常用软件包括但不限于deepseek、kimi、豆包、chatgpt、midjourney、即梦、可灵等。下方为利用AI制作部分作品展示：</p>
+            <div class="portfolio-sub">
+              <h4 data-i18n="pf.img.s1">① AI表情包制作</h4>
+              <p class="detail-desc" data-i18n="pf.img.d1">利用AI生成多风格表情包，九宫格展示多种角色与情绪表达。</p>
+              <div class="img-grid">
+                <img src="images/表情包.jpg" alt="AI表情包" class="portfolio-img" data-lightbox>
+              </div>
+            </div>
+            <div class="portfolio-sub">
+              <h4 data-i18n="pf.img.s2">② AI应援物料设计</h4>
+              <p class="detail-desc" data-i18n="pf.img.d2">结合AI图像生成与文创设计，产出吊卡、文具、数码配件等多品类应援周边。</p>
+              <div class="img-grid">
+                <img src="images/应援物料设计1.webp" alt="AI应援物料" class="portfolio-img" data-lightbox>
+                <img src="images/应援物料设计2.webp" alt="AI应援物料" class="portfolio-img" data-lightbox>
+                <img src="images/应援物料设计3.jpg" alt="AI应援物料" class="portfolio-img" data-lightbox>
+                <img src="images/应援物料设计4.jpg" alt="AI应援物料" class="portfolio-img" data-lightbox>
+                <img src="images/应援物料设计5.webp" alt="AI应援物料" class="portfolio-img" data-lightbox>
+              </div>
+            </div>
+            <div class="portfolio-sub">
+              <h4 data-i18n="pf.img.s3">③ AI 3D建模</h4>
+              <p class="detail-desc" data-i18n="pf.img.d3">使用AI工具生成3D角色模型，已完成实体打印，验证了从数字设计到物理成品的完整链路。</p>
+              <div class="img-grid">
+                <img src="images/3D建模（已打印实体）.jpg" alt="AI 3D建模" class="portfolio-img" data-lightbox>
+              </div>
+            </div>
+            <div class="portfolio-sub">
+              <h4 data-i18n="pf.img.s4">④ AI视频制作</h4>
+              <p class="detail-desc" data-i18n-html="pf.img.d4">AI视频作品：<a href="https://v.douyin.com/mS6-jW1jbOQ/" target="_blank" rel="noreferrer">https://v.douyin.com/mS6-jW1jbOQ/</a></p>
+              <div class="img-grid">
+                <img src="images/AI视频.jpg" alt="AI视频" class="portfolio-img" data-lightbox>
+                <img src="images/AI视频2.jpg" alt="AI视频" class="portfolio-img" data-lightbox>
+              </div>
+            </div>
+          </article>
+
+          <!-- 数据分析和可视化 -->
+          <article class="detail-item glass-panel">
+            <span class="detail-title" data-i18n-html="pf.data.title"><i data-lucide="bar-chart-3"></i> 数据分析和可视化</span>
+            <div class="portfolio-sub">
+              <h4 data-i18n="pf.data.s1">① SQL</h4>
+              <p class="detail-desc" data-i18n-html="pf.data.d1">熟练运用SQL进行数据的提取、分析工作，并多次通过牛客网的SQL题库进行实战演练，正确率95%+。并且，结合所学知识进行拓展，将SQL与AI结合，创作出SQL代码生成的智能体：<a href="https://sql-generate-assist.nocode.host" target="_blank" rel="noreferrer">https://sql-generate-assist.nocode.host</a></p>
+              <div class="img-grid">
+                <img src="images/自动化进行SQL代码生成的智能体1.jpg" alt="SQL智能体" class="portfolio-img" data-lightbox>
+                <img src="images/自动化进行SQL代码生成的智能体2.jpg" alt="SQL智能体" class="portfolio-img" data-lightbox>
+              </div>
+            </div>
+            <div class="portfolio-sub">
+              <h4 data-i18n="pf.data.s2">② Tableau</h4>
+              <p class="detail-desc" data-i18n-html="pf.data.d2">熟练运用Tableau对数据进行可视化，作品已发布在Tableau Public：<a href="https://public.tableau.com" target="_blank" rel="noreferrer">外卖数据可视化 | Tableau Public</a></p>
+              <div class="img-grid">
+                <img src="images/Tableau对数据进行可视化.jpg" alt="Tableau" class="portfolio-img" data-lightbox>
+              </div>
+            </div>
+            <div class="portfolio-sub">
+              <h4 data-i18n="pf.data.s3">③ 非结构化数据分析（VOC）</h4>
+              <p class="detail-desc" data-i18n-html="pf.data.d3">我能够熟练运用workbuddy、kimi、Python、八爪鱼等工具进行公开数据的爬取、清洗、AI打标、情感分析、意图分析、可视化等分析工作，曾在这一周内完成6月25日苹果涨价的VOC数据分析：<br>（1）报告PPT可见：<a href="https://my.feishu.cn/file/H0fvbxJ3movP3pxDc4hcbGRKnUb?from=from_copylink" target="_blank" rel="noreferrer">https://my.feishu.cn/file/H0fvbxJ3movP3pxDc4hcbGRKnUb</a><br>（2）完整报告见：<a href="https://my.feishu.cn/docx/RLtadS4upoCWZhx7zrWcj1eunQh?from=from_copylink" target="_blank" rel="noreferrer">https://my.feishu.cn/docx/RLtadS4upoCWZhx7zrWcj1eunQh</a></p>
+              <div class="img-grid">
+                <img src="images/VOC数据分析-报告PPT1.jpg" alt="VOC数据分析报告PPT" class="portfolio-img" data-lightbox>
+                <img src="images/VOC数据分析-报告PPT2.jpg" alt="VOC数据分析报告PPT" class="portfolio-img" data-lightbox>
+                <img src="images/VOC数据分析-完整报告1.jpg" alt="VOC数据分析完整报告" class="portfolio-img" data-lightbox>
+                <img src="images/VOC数据分析-完整报告2.jpg" alt="VOC数据分析完整报告" class="portfolio-img" data-lightbox>
+                <img src="images/VOC数据分析-图表索引.jpg" alt="VOC数据分析图表索引" class="portfolio-img" data-lightbox>
+              </div>
+            </div>
+            <div class="portfolio-sub">
+              <h4 data-i18n="pf.data.s4">④ 结构化数据分析（面板、问卷等实证分析）</h4>
+              <p class="detail-desc" data-i18n="pf.data.d4a">我的硕士毕业论文涉及大量公开面板数据的实证分析工作，内容包括但不限于数据获取、清洗、描述性统计、相关性分析、多重共线性分析、基准回归分析、稳健性检验（内生性、PSM）、异质性分析等，涉及到的分析工具主要是stata。</p>
+              <p class="detail-desc" data-i18n="pf.data.d4b">我的本科毕业论文涉及大量问卷调查类型的实证分析工作，内容包括但不限于问卷设计、清洗、信效度检验、描述性统计、相关性分析、中介效应检验等，涉及到的分析工具主要是spss。</p>
+            </div>
+            <div class="portfolio-sub">
+              <h4 data-i18n="pf.data.s5">⑤ EXCEL</h4>
+              <p class="detail-desc" data-i18n-html="pf.data.d5">能够熟练运用EXCEL的多种高级函数和功能，如vlookup、match、index、数据透视表等完成自动化报表的制作和数据分析。通过对EXCEL的熟练操作，独立开发了完善的自动化Excel分析模型，更好地进行比赛的市场分析和预测，前者用于展示、后者用于复杂的数据分析。<a href="https://siezqc4mx7f.feishu.cn/file/WpAjb9cyIoCw3dxY25QcvTbHnyd?from=from_copylink" target="_blank" rel="noreferrer">飞书链接：查看详细文件</a></p>
+              <div class="img-grid">
+                <img src="images/EXCEL 1.jpg" alt="Excel展示" class="portfolio-img" data-lightbox>
+                <img src="images/EXCEL 2.webp" alt="Excel分析" class="portfolio-img" data-lightbox>
+              </div>
+            </div>
+          </article>
+
+          <!-- 自媒体矩阵 -->
+          <article class="detail-item glass-panel">
+            <span class="detail-title" data-i18n-html="pf.media.title"><i data-lucide="share-2"></i> 自媒体矩阵</span>
+            <p class="detail-desc" data-i18n="pf.media.intro">具有一定的账号运营经历，在大众点评、抖音、小红书都有自己独立的自媒体账号，具有较强的网感。在文案撰写、标题选择、封面设计、图片美化、视频剪辑、拍摄方面有着丰富的实践经验。</p>
+            <div class="portfolio-sub">
+              <h4 data-i18n="pf.media.s1">① 大众点评</h4>
+              <p class="detail-desc" data-i18n="pf.media.d1">目前主要运营着一个聚焦四川本地的大众点评账号，粉丝数过1000，期间发布了超过200篇笔记，其中单篇笔记的最高浏览量近40万，还有多篇浏览量过万的笔记。以下为3篇参考笔记：</p>
+              <div class="img-grid">
+                <img src="images/大众点评1.jpg" alt="大众点评" class="portfolio-img" data-lightbox>
+                <img src="images/大众点评2.jpg" alt="大众点评" class="portfolio-img" data-lightbox>
+                <img src="images/大众点评3.jpg" alt="大众点评" class="portfolio-img" data-lightbox>
+              </div>
+            </div>
+            <div class="portfolio-sub">
+              <h4 data-i18n="pf.media.s2">② 抖音</h4>
+              <p class="detail-desc" data-i18n="pf.media.d2">运营两个聚焦生活的抖音账号，粉丝数200+，单篇作品最高浏览量160万+，共有2篇百万播放量的作品，还有多篇作品浏览量过万。以下为4篇参考视频：</p>
+              <div class="img-grid">
+                <img src="images/抖音1.jpg" alt="抖音" class="portfolio-img" data-lightbox>
+                <img src="images/抖音2.jpg" alt="抖音" class="portfolio-img" data-lightbox>
+                <img src="images/抖音3.jpg" alt="抖音" class="portfolio-img" data-lightbox>
+                <img src="images/抖音4.jpg" alt="抖音" class="portfolio-img" data-lightbox>
+              </div>
+            </div>
+          </article>
+
+          <!-- 其他软件 -->
+          <article class="detail-item glass-panel">
+            <span class="detail-title" data-i18n-html="pf.soft.title"><i data-lucide="wrench"></i> 其他软件</span>
+            <p class="detail-desc" data-i18n="pf.soft.intro">学习能力较强，曾在两周内熟练掌握多种软件，能够对多种工具软件快速上手，如Axure、SPSS、AMOS、剪映、醒图、稿定设计、秀米等。</p>
+            <div class="portfolio-sub">
+              <h4 data-i18n="pf.soft.s1">① Axure</h4>
+              <p class="detail-desc" data-i18n-html="pf.soft.d1">以Axure为例，用Axure简单模拟了微信的主页、对话框、名片的使用场景，可以点击链接进行体验：<a href="https://vcwlsd.axshare.com" target="_blank" rel="noreferrer">https://vcwlsd.axshare.com</a></p>
+              <div class="img-grid">
+                <img src="images/Axure 1.png" alt="Axure" class="portfolio-img" data-lightbox>
+                <img src="images/Axure 2.png" alt="Axure" class="portfolio-img" data-lightbox>
+                <img src="images/Axure 3.png" alt="Axure" class="portfolio-img" data-lightbox>
+              </div>
+            </div>
+            <div class="portfolio-sub">
+              <h4 data-i18n="pf.soft.s2">② AI软件 — 辅助编程与创作</h4>
+              <p class="detail-desc" data-i18n="pf.soft.d2">还熟练掌握多种AI软件，如：chatgpt、midjourney、kimi、文心一言等，能够熟练运用AI辅助操作python、markdown等编程语言。</p>
+            </div>
+          </article>
+
+          <!-- 休闲娱乐 -->
+          <article class="detail-item glass-panel">
+            <span class="detail-title" data-i18n-html="pf.fun.title"><i data-lucide="gamepad-2"></i> 休闲娱乐</span>
+            <p class="detail-desc" data-i18n="pf.fun.intro">在娱乐上，涉猎范围较广，网络游戏、桌游、展览演出、密室逃脱、旅游等等。</p>
+            <div class="portfolio-sub">
+              <h4 data-i18n="pf.fun.s1">① 游戏经历</h4>
+              <p class="detail-desc" data-i18n="pf.fun.d1">在游戏上，涉猎过的游戏种类较多。其中，场次和时长最多的两个游戏分别是：《王者荣耀》和《第五人格》。前者场次2000+，最高段位王者；后者场次1500+，最高段位四阶。所有玩过的游戏包括但不限于以下端游和手游：</p>
+              <ul class="detail-points compact">
+                <li data-i18n-html="pf.fun.g1"><strong>RPG类游戏：</strong>阴阳师、哈利波特：魔法觉醒、燕云十六声、奇异人生、原神</li>
+                <li data-i18n-html="pf.fun.g2"><strong>MMO类游戏：</strong>明日之后、逆水寒手游</li>
+                <li data-i18n-html="pf.fun.g3"><strong>休闲类游戏：</strong>开心消消乐、植物大战僵尸、俄罗斯方块、纪念碑谷</li>
+                <li data-i18n-html="pf.fun.g4"><strong>体育类游戏：</strong>QQ飞车</li>
+                <li data-i18n-html="pf.fun.g5"><strong>二次元类游戏/女性向游戏：</strong>恋与制作人、奇迹暖暖、光与夜之恋、未定事件簿</li>
+                <li data-i18n-html="pf.fun.g6"><strong>竞技类游戏：</strong>第五人格、荒野行动、永劫无间（手游版）、蛋仔派对、王者荣耀、CS:GO、守望先锋</li>
+                <li data-i18n-html="pf.fun.g7"><strong>其他类游戏：</strong>我的世界（手游）、人类一败涂地、节奏大师、双人成行、鹅鸭杀、黑神话：悟空</li>
+              </ul>
+            </div>
+            <div class="portfolio-sub">
+              <h4 data-i18n="pf.fun.s2">② 桌游</h4>
+              <p class="detail-desc" data-i18n="pf.fun.d2">主要体验的有：血染钟楼、剧本杀、狼人杀、阿瓦隆等。</p>
+            </div>
+            <div class="portfolio-sub">
+              <h4 data-i18n="pf.fun.s3">③ 展览演出</h4>
+              <p class="detail-desc" data-i18n="pf.fun.d3">参加过的项目包括但不限于喜剧、话剧、戏剧、互动剧场、脱口秀、音乐节、演唱会等，如：草莓音乐节、开心麻花《瞎画艺术家》、开心麻花《双面奇才》、开心麻花《嘿！亚利桑那！》、开心麻花《开心聊斋·三生》、开心麻花《捞金晚宴》、开心麻花《疯狂理发店》、开心麻花《芳心之醉》、开心麻花《方橙市大侦探》、开心麻花《醉后赢家》、开心麻花《致命旋律》、开心麻花《燃烧》、开心麻花《牢友记》、《灯塔》、《阿波罗尼亚》、《朱莉小姐》、《花见小馆》、《奶奶的诗》、《熊猫》、《花重锦官城》、《成都》、《成都喜事》、《家长会》、《枪打出头鸟》、《阿强的葬礼》、《遗失的第24个白键》、《摘星辰》、《出口》、《卓文君》、《苏母》、《重返三星堆——古蜀王国奇幻之旅VR沉浸式展》等等。</p>
+            </div>
+            <div class="portfolio-sub">
+              <h4 data-i18n="pf.fun.s4">④ 密室逃脱</h4>
+              <p class="detail-desc" data-i18n="pf.fun.d4">也体验过不同主题和形式的密室，包括但不限于恐怖or温馨，NPC互动or纯机械解谜。如：《熄灯了》、《COME BACK》、《镇灵村》、《万肃监狱》、《留校》、《头号玩家》、《寄生虫》、《贞相大白2》等。</p>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ===== M7: Contact Band ===== -->
+      <section class="contact-band glass-panel" id="contact">
+        <div>
+          <h2 data-i18n="contact.title">让我们一起开启下一段经历</h2>
+        </div>
+        <div class="contact-actions">
+          <button class="button primary" data-copy="z1261144319@126.com" data-copy-label="邮箱">
+            <i data-lucide="send"></i>
+            <span data-i18n="contact.emailbtn">邮件：z1261144319@126.com</span>
+          </button>
+          <button class="button" data-copy="18800105658" data-copy-label="电话">
+            <i data-lucide="phone"></i>
+            <span data-i18n="contact.phonebtn">电话：18800105658</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span data-i18n="footer.text">臧珂 · AI Native · 数据分析 · 运营</span>
+      <a href="#top" data-i18n="footer.top">回到顶部</a>
+    </footer>
+
+    <!-- Copy Toast -->
+    <div class="copy-toast" id="copyToast"></div>
+
+    <!-- Lightbox -->
+    <div class="lightbox-overlay" id="lightbox">
+      <button class="lightbox-close" aria-label="关闭">&times;</button>
+      <div class="lightbox-toolbar" role="toolbar" aria-label="图片工具栏">
+        <button class="lightbox-btn" id="lightboxZoomOut" aria-label="缩小" title="缩小 (-)">−</button>
+        <button class="lightbox-btn" id="lightboxZoomReset" aria-label="重置" title="重置 (0)">100%</button>
+        <button class="lightbox-btn" id="lightboxZoomIn" aria-label="放大" title="放大 (+)">+</button>
+      </div>
+      <div class="lightbox-stage" id="lightboxStage">
+        <img class="lightbox-img" id="lightboxImg" alt="放大图片" draggable="false">
+      </div>
+    </div>
+  </body>
+</html>
