@@ -19,3 +19,6 @@ images_original/
 
 # 不发布嵌套的旧版本目录（cp -r v23 v24 时的遗留）
 v1-single-page-v23/
+
+# 不发布嵌套的 v1-single-page-v25 目录（cp -r v25 v26 时的遗留）
+v1-single-page-v25/
