@@ -570,6 +570,8 @@ h4 { margin: 18px 0 8px; font-size: 1rem; font-weight: 700; color: var(--ink); }
 
 .detail-desc { color: rgba(44, 36, 34, 0.72); font-size: 1rem; line-height: 1.68; margin-bottom: 10px; font-weight: 400; }
 .detail-desc strong { font-weight: 700; color: rgba(44, 36, 34, 0.92); }
+.detail-desc.is-label { margin-top: 14px; margin-bottom: 6px; }
+.detail-desc.is-label strong { font-weight: 700; font-size: 1.02rem; color: rgba(44, 36, 34, 0.88); }
 .detail-desc a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
 
 .img-grid {

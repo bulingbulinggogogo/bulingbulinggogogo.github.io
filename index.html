@@ -327,6 +327,7 @@
             <h2 data-i18n="proj.2.title">苹果"6·25涨价"事件顾客反响全链路数据分析（VOC 洞察）</h2>
             <p class="detail-desc" data-i18n-html="proj.2.role"><strong>角色：</strong>独立数据分析师，利用 AI 独立完成需求定义、架构设计、采集、标注、建模与汇报（使用到的工具包括但不限于：kimi / MiniMax API / Python / 八爪鱼 RPA）。</p>
             <p class="detail-desc" data-i18n-html="proj.2.desc"><strong>项目描述：</strong>针对苹果 6·25 涨价事件，独立搭建"多源采集→数据治理→大模型标注→统计建模→可视化交付"全链路，覆盖京东 / 天猫 4 家旗舰店评价、微博 / 小红书 / 知乎舆情，治理标注文本 15,583 条（15,322 条入模），用事件研究与 DID 剥离 618 干扰，量化涨价对 iPhone / iPad / Mac 的差异化影响。最终，在 1 周内独立交付全链路项目，得出"618 而非涨价才是负面峰值、冲击集中于 Mac"的反直觉结论，产出研究报告、34 张图表与 30 页 PPT。</p>
+            <p class="detail-desc is-label" data-i18n-html="proj.2.duties"><strong>项目职责：</strong></p>
             <ul class="detail-points">
               <li data-i18n-html="proj.2.p1"><strong>1) 需求定义：</strong>将模糊业务问题拆解为可量化指标体系，设计三时间窗 + 华为对照组 + iPhone 组内对照的因果识别框架，前置规划伪断点、平行趋势与稳健性检验。</li>
               <li data-i18n-html="proj.2.p2"><strong>2) 架构决策：</strong>设计模块化流水线（9 个分析模块、一键重跑、结果逐字节可复现）；标注选型放弃纯词典法，采用 MiniMax LLM 多标签标注（情绪 4 类 / 维度 8 类 / 意图 13 类），保留词典法作独立交叉验证口径。</li>
@@ -348,6 +349,7 @@
             <h2 data-i18n="proj.3.title">小红书找转租工作台——AI 驱动的房源信息采集与信息结构化工具</h2>
             <p class="detail-desc" data-i18n-html="proj.3.role"><strong>角色：</strong>独立产品负责人 / 开发者，利用 AI 独立完成产品调研、需求定义、系统设计到开发验收全流程（使用到的工具包括但不限于：codex / kimi / MiniMax API）。</p>
             <p class="detail-desc" data-i18n-html="proj.3.desc"><strong>项目描述：</strong>针对小红书转租信息"帖子分散、格式随意、关键信息埋在正文里、靠人工刷帖效率极低"的痛点，独立完成产品调研、需求定义、系统设计到开发验收全流程，打造一款 AI 驱动的房源信息采集与结构化工具：通过 Chrome CDP 协议驱动用户本人已登录的浏览器合规慢速采集小红书转租帖，将非结构化帖子自动提取为价格、区域、房型、联系方式等 8 个结构化字段，以卡片化界面呈现筛选，把"刷 3 小时帖子"压缩为"看 20 分钟结构化列表"。全程利用 AI（Codex）完成全栈开发，1 个月内独立交付可用产品；实测累计采集真实房源帖 60+ 条、0 风控触发，核心字段提取准确率约 85%；5 位同学内测，信息收集环节提效约 85%，其中 1 位同学借助工具成功签约。</p>
+            <p class="detail-desc is-label" data-i18n-html="proj.3.duties"><strong>项目职责：</strong></p>
             <ul class="detail-points">
               <li data-i18n-html="proj.3.p1"><strong>1) 产品调研与需求定义：</strong>调研 GitHub 已有采集方案，确认其场景与字段体系不匹配转租需求后决策从零自研；独立撰写 PRD 与字段 Schema（价格 / 区域 / 房型 / 联系方式等 8 个核心字段），定义核心使用路径，明确 MVP 范围与"演示数据验收→小批量实测"的分阶段验收标准。</li>
               <li data-i18n-html="proj.3.p2"><strong>2) 合规采集与提取方案设计：</strong>针对平台风控设计"CDP 协议驱动本人已登录浏览器 + 限速退避"的采集方案，不接管账号、不触碰登录态，实测全程 0 风控触发；设计"规则提取先行、大模型增强兜底"的两级结构化方案，核心字段准确率约 85%，低置信度记录自动标记人工复核，预留 DeepSeek API 按需升级。</li>
