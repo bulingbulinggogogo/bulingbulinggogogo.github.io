@@ -22,3 +22,6 @@ v1-single-page-v23/
 
 # 不发布嵌套的 v1-single-page-v25 目录（cp -r v25 v26 时的遗留）
 v1-single-page-v25/
+
+# 不发布嵌套的 v1-single-page-v28 目录（cp -r v28 v30 时的遗留）
+v1-single-page-v28/
