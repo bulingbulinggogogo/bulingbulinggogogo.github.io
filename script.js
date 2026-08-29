@@ -139,7 +139,7 @@ const enTranslations = {
 
   // Projects
   "projects.eyebrow": "Projects",
-  "projects.title": "Business Negotiation on Campus",
+  "projects.title": "Sharpened Through Real-World Projects",
   "proj.1.title": "'Business Talk Winner Cup' National College Business Negotiation Competition · Team Lead",
   "proj.1.t1": "Team Leadership",
   "proj.1.t2": "Strategy Planning",
