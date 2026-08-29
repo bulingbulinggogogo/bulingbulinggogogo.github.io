@@ -1,0 +1,24 @@
+# WorkBuddy 截图与调试文件（不发布）
+_v22_*.png
+_shoot_v22.js
+_v23_*.png
+_shoot_v23.js
+FINAL_*.png
+_perf_test.js
+_test_*.js
+_demo*.js
+_final_demo.js
+_optimize.py
+_verify.js
+_verify*.js
+_v25_optimize.py
+_v25_*.png
+
+# 不发布原图备份（图片优化脚本生成的原图备份，约 23MB）
+images_original/
+
+# 不发布嵌套的旧版本目录（cp -r v23 v24 时的遗留）
+v1-single-page-v23/
+
+# 不发布嵌套的 v1-single-page-v25 目录（cp -r v25 v26 时的遗留）
+v1-single-page-v25/
