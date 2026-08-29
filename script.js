@@ -617,6 +617,55 @@ window.addEventListener("DOMContentLoaded", () => {
     else if (lbScale > LB_MIN && e.key === "PageDown")  { e.preventDefault(); lbScrollBy(window.innerHeight * 0.5); }
   });
 
+  // 5.5 Nav scroll-spy: highlight the section currently in viewport
+  const navLinks = document.querySelectorAll(".site-nav a[href^='#']");
+  const navTargets = Array.from(navLinks)
+    .map((a) => {
+      const id = a.getAttribute("href").slice(1);
+      const el = document.getElementById(id);
+      return el ? { link: a, el } : null;
+    })
+    .filter(Boolean);
+
+  if (navTargets.length && "IntersectionObserver" in window) {
+    const visible = new Set();
+    const setActive = () => {
+      // Pick the section whose top is closest to (but not below) viewport top + 1/3
+      const anchor = window.innerHeight * 0.33;
+      let best = null;
+      let bestTop = -Infinity;
+      for (const { link, el } of navTargets) {
+        const rect = el.getBoundingClientRect();
+        if (rect.top <= anchor && rect.top > bestTop) {
+          bestTop = rect.top;
+          best = link;
+        }
+      }
+      // Fallback: if nothing above anchor, pick first visible
+      if (!best) {
+        for (const { link, el } of navTargets) {
+          if (visible.has(el)) { best = link; break; }
+        }
+      }
+      navLinks.forEach((a) => {
+        a.classList.toggle("is-current", a === best);
+      });
+    };
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) visible.add(entry.target);
+          else visible.delete(entry.target);
+        });
+        setActive();
+      },
+      { rootMargin: "-30% 0px -50% 0px", threshold: 0 }
+    );
+    navTargets.forEach(({ el }) => io.observe(el));
+    window.addEventListener("scroll", setActive, { passive: true });
+    setActive();
+  }
+
   // 6. Copy to clipboard
   const toast = document.getElementById("copyToast");
 

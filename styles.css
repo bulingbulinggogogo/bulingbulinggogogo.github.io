@@ -164,6 +164,17 @@ img {
   transform: translateY(-1px);
   outline: none;
 }
+.site-nav a.is-current {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+  box-shadow: 0 8px 20px rgba(200, 74, 46, 0.25);
+}
+.site-nav a.is-current:hover, .site-nav a.is-current:focus-visible {
+  background: var(--accent);
+  color: white;
+  transform: translateY(-1px);
+}
 
 .nav-cta {
   width: 56px;
@@ -557,7 +568,8 @@ h4 { margin: 18px 0 8px; font-size: 1rem; font-weight: 700; color: var(--ink); }
 .portfolio-sub h4 { margin-bottom: 8px; }
 .portfolio-sub .detail-desc { margin-bottom: 10px; }
 
-.detail-desc { color: rgba(44, 36, 34, 0.72); font-size: 1rem; line-height: 1.68; margin-bottom: 10px; }
+.detail-desc { color: rgba(44, 36, 34, 0.72); font-size: 1rem; line-height: 1.68; margin-bottom: 10px; font-weight: 400; }
+.detail-desc strong { font-weight: 700; color: rgba(44, 36, 34, 0.92); }
 .detail-desc a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
 
 .img-grid {
